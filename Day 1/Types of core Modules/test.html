@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Printing Numbers</title>
+</head>
+<body>
+
+<div id="output"></div>
+
+<script>
+  // Get the div where you want to print the numbers
+  const outputDiv = document.getElementById('output');
+
+  // Loop and print numbers
+  for (let i = 0; i < 50000; i++) {
+    // Create a new div element for each number
+    const numberDiv = document.createElement('div');
+    // Set the content of the div to the current number
+    numberDiv.textContent = i;
+    // Append the div to the output div
+    outputDiv.appendChild(numberDiv);
+  }
+</script>
+
+</body>
+</html>

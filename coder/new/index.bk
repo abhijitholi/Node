@@ -1,0 +1,25 @@
+const express = require ("express");
+require('dotenv').config();
+const server = express();
+const port = process.env.PORT
+
+// middle ware
+server.use(express.static(process.env.STATIC_FOLDER));
+
+// Api
+
+// server.get("/home",function(req, res){
+//     res.send("Hello");
+// })
+
+server.get("/home",function(req, res){ 
+    //res.json({"Text":"Hello"});
+    console.log(req.query);
+    req.send(req.query);
+})
+
+server.listen(port,function(){
+    console.log('Server is running.')
+}) 
+ 
+

@@ -10,8 +10,6 @@ server.get('/person',(req, res)=>{
     res.json({name:personName,age})
 })
 
-
-
 server.listen(process.env.PORT,function(){
     console.log('Server is running.')
 }) 

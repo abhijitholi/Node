@@ -1,0 +1,1 @@
+{"version":"1.12","events":[{"event":"call","id":1,"thread_id":0,"method_id":"DataBase","static":true,"parameters":[],"defined_class":"db","path":"db.js","lineno":6},{"event":"return","thread_id":0,"id":2,"parent_id":1,"return_value":{"class":"Promise","value":"Promise { undefined }","object_id":1},"elapsed":0.023439470001903828}
